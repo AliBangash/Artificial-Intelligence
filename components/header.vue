@@ -26,9 +26,7 @@
             </li>
           </ul>
           <div class="nav-contact">
-            <NuxtLink to="/contact-us" class="contact-button"
-              >Contact Us</NuxtLink
-            >
+            <NuxtLink to="/contact-us" class="contact-button">Contact Us</NuxtLink>
           </div>
           <div class="nav-btn" @click="toggleMenu">
             <label for="nav-check">
@@ -42,16 +40,11 @@
       <Banner />
     </div>
     <div class="banner-data">
-      <NuxtImg
-        src="/images/bannerdata.png"
-        alt="bannerdata"
-        class="banner-img"
-      />
+      <NuxtImg src="/images/bannerdata.png" alt="bannerdata" class="banner-img" />
       <p class="banner-para">
-        AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT -
-        AI- DEVELOPMENT - AI- DEVELOPMENT
+        AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT
       </p>
-       <p class="banner-para-mobi">
+      <p class="banner-para-mobi">
         AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT
       </p>
     </div>

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="blog-page">
 <blog-section/>
   </div>
 </template>
