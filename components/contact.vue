@@ -24,7 +24,7 @@
               required
             />
           </div>
-          <div class="form-group">
+          <div class="form-group message-area">
             <textarea
               v-model="form.message"
               placeholder="Message"
@@ -116,30 +116,65 @@ textarea {
 .submit-button:hover {
   background-color: #2575fc;
 }
-@media only screen and (max-width: 1199px) and (min-width: 992px){
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
   input,
-textarea {
-  width: 350px;
-  height: 45px;
-}
-.form-content h2 {
-  font-size: 45px;
-}
-.form-container {
+  textarea {
+    width: 350px;
+    height: 45px;
+  }
+  .form-content h2 {
+    font-size: 45px;
+  }
+  .form-container {
     margin-bottom: 100px;
+  }
 }
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  input,
+  textarea {
+    width: 180px;
+    height: 35px;
+  }
+  .form-content h2 {
+    font-size: 35px;
+  }
+  .form-container {
+    margin-bottom: 100px;
+  }
 }
-@media only screen and (max-width: 991px) and (min-width: 768px){
+@media (max-width: 767px) {
+  .form-container {
+    flex-direction: column-reverse;
+    padding: 40px 25px;
+    margin-bottom: 100px;
+  }
+  .form-content h2 {
+    font-size: 32px;
+  }
+  .form-content p {
+    font-size: 14px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px 22px;
+    max-width: 300px;
+    height: 65px;
+  }
+  .message-area textarea {
+    height: 170px !important;
+  }
+  button.submit-button {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 410px) {
     input,
-textarea {
-  width: 180px;
-  height: 35px;
-}
-.form-content h2 {
-  font-size: 35px;
-}
-.form-container {
-    margin-bottom: 100px;
-}
+  textarea {
+    width: 100%;
+    padding: 10px 0 10px 10px;
+    max-width: 300px;
+    height: 65px;
+  }
 }
 </style>

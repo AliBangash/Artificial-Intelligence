@@ -25,7 +25,7 @@ defineProps({
   background: white;
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 8px rgb(114 26 10 / 33%);
   max-width: 550px;
   padding: 15px;
   border: 1px solid #5fc4ecbf;
@@ -77,6 +77,15 @@ defineProps({
 @media only screen and (max-width: 991px) and (min-width: 768px){
   .blog-card {
   max-width: 85%;
+}
+}
+@media (max-width: 767px) {
+  .card-title {
+  font-size: 18px;
+}
+
+.card-description {
+  font-size: 14px;
 }
 }
 </style>

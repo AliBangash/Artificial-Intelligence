@@ -136,9 +136,27 @@
   }
 
   .stats {
-    flex-direction: column;
     gap: 1rem;
   }
+       .banner-h2 {
+  font-size: 24px;
+}
+.banner-h1 {
+  font-size: 28px;
+}
+.banner-h3 {
+  font-size: 28px;
+}
+.data {
+    font-size: 40px;
+}
+.content-area p{
+    font-size: 14px;
+            line-height: 1.6;
+}
+.stats div {
+    font-size: 14px;
+}
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px){
@@ -172,4 +190,5 @@
     font-size: 12px;
 }
 }
+
 </style>

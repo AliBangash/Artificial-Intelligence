@@ -51,6 +51,9 @@
         AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT -
         AI- DEVELOPMENT - AI- DEVELOPMENT
       </p>
+       <p class="banner-para-mobi">
+        AI- DEVELOPMENT - AI- DEVELOPMENT - AI- DEVELOPMENT
+      </p>
     </div>
   </div>
 </template>
@@ -177,10 +180,34 @@ img.main-logo {
 #nav-check:checked ~ .nav-btn label span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -4px);
 }
-
+.banner-para-mobi {
+  display: none;
+}
 @media (max-width: 767px) {
+  .banner-data {
+    bottom: -20px;
+}
+  .banner-para-mobi {
+  position: absolute;
+  top: 50%;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  width: 100%;
+  transform-origin: left;
+  transform: rotate(358deg);
+  margin: 0;
+   font-family: "Gilroy-Regular", sans-serif;
+   display: block;
+}
+.banner-para {
+display: none;
+}
+  .banner-para{
+    font-size: 12px;
+}
   .nav > .nav-list {
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    box-shadow: none;
   }
   .nav > .nav-list > li a {
     color: #fff;
@@ -194,7 +221,6 @@ img.main-logo {
 
   .nav > .nav-btn {
     cursor: pointer;
-    background: #fff;
     border-radius: 4px;
     width: 35px;
     height: 35px;
@@ -211,9 +237,9 @@ img.main-logo {
 
   .nav > .nav-btn > label > span {
     display: block;
-    width: 25px;
+    width: 40px;
     height: 7px;
-    border-top: 2px solid #2f67aa;
+    border-top: 5px solid #fff;
   }
 
   .nav > .nav-list {
@@ -227,13 +253,15 @@ img.main-logo {
     top: 75px;
     left: 0;
     overflow: hidden;
-    background: #2f67aa;
     z-index: 99;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background: none;
   }
-
+.nav-contact {
+    display: none;
+}
   .nav > .nav-list > li {
     width: 100%;
     padding: 15px 0;

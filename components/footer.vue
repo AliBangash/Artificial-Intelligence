@@ -59,4 +59,21 @@ img.facebook {
 img.twitter {
     width: 20px;
 }
+@media (max-width: 767px) {
+  .copyright {
+  font-size: 14px;
+}
+.footer {
+  padding: 20px;
+}
+.social-icons {
+    gap: 15px;
+}
+}
+@media (max-width: 410px) {
+  footer.footer {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+}
 </style>

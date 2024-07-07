@@ -215,4 +215,19 @@ const services = [
 
 }
 }
+@media (max-width: 767px) {
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+  h2.section-title {
+    font-size: 32px;
+}
+.services-section{
+    padding: 60px 0;
+}
+.services-section {
+    margin-top: 100px;
+}
+}
 </style>
