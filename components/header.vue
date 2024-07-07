@@ -177,6 +177,9 @@ img.main-logo {
   display: none;
 }
 @media (max-width: 767px) {
+  .header-area {
+  padding: 0 15px;
+}
   .banner-data {
     bottom: -20px;
 }
@@ -209,7 +212,7 @@ display: none;
     max-width: 200px;
   }
   .nav {
-    padding: 1rem 0;
+    padding: 0;
   }
 
   .nav > .nav-btn {
@@ -250,7 +253,9 @@ display: none;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: none;
+    background: black;
+        height: 400px;
+        border-radius: inherit;
   }
 .nav-contact {
     display: none;
